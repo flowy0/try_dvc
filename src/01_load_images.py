@@ -6,7 +6,7 @@ from bing_image_downloader import downloader
 
 DIR_IMG = 'data/images'
 search_string ='superman'
-search_limit=10
+search_limit=15
 
 
 if __name__ == "__main__": 
