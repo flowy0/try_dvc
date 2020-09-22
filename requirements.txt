@@ -1,0 +1,4 @@
+dvc
+pandas
+pillow
+bing_image_downloader
