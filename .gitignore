@@ -3,6 +3,8 @@
 
 *.DS_Store
 
+.dvc/config
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
