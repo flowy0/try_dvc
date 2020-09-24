@@ -5,6 +5,7 @@
 # imports
 import requests
 import os
+import pandas as pd
 # import logging
 from utility import create_folders
 
@@ -27,8 +28,17 @@ def get_csv(csv_link=csv_link, file_name ='hurricanes.csv', dir_path=DIR_DATA):
     csv_file.close()
     print(f'File is saved at {output_file_path}')
 
+
+def get_sample_csv(file_path=os.path.join(DIR_DATA,'hurricanes.csv'), output_file='sample.csv'):
+    df = pd.read_csv(file_path)
+
+    df_sample = df.head(100)
+    df_sample.to_csv(os.path.join(DIR_DATA, output_file), index=False)
+
+
 if __name__ == "__main__": 
     #create some folders to store
     create_folders([DIR_DATA])
     #get a csv
     get_csv()
+    get_sample_csv()
