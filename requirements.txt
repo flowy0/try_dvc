@@ -2,3 +2,6 @@ dvc
 pandas
 pillow
 bing_image_downloader
+s3fs
+python-dotenv
+awscli
