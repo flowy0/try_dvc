@@ -1,0 +1,11 @@
+stages:
+  prepare:
+    cmd: python get_started/prepare.py data/data.xml
+    deps:
+    - data/data.xml
+    - get_started/prepare.py
+    params:
+    - prepare.seed
+    - prepare.split
+    outs:
+    - data/prepared
