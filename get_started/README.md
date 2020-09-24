@@ -17,6 +17,11 @@ dvc run -n prepare \
           python src/prepare.py ../data/data.xml
 ```
 
+Track changes with git 
+```
+git add dvc.lock dvc.yaml data/.gitignore
+```
+
 Push this to remote storage
 ``` 
 dvc push 
